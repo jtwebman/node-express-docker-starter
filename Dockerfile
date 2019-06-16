@@ -14,11 +14,11 @@ RUN npm test
 
 FROM running as development
 COPY --from=build-dev /usr/src/app .
-CMD npm run start:dev
+CMD ["npm", "run", "start:dev"]
 
 FROM build as build-prod
 RUN npm ci --production
 
 FROM running as production
 COPY --from=build-prod /usr/src/app .
-CMD node server
+CMD ["node", "server.js"]
