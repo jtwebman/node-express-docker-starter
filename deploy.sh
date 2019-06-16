@@ -11,4 +11,4 @@ docker push "jtwebman/node-express-docker-starter:$PACKAGE_VERSION"
 docker push jtwebman/node-express-docker-starter:dev
 
 # Run coverall to push coverage reports
-docker run -it --rm -e TRAVIS_JOB_ID="$TRAVIS_JOB_ID" -e TRAVIS_BRANCH="$TRAVIS_BRANCH" jtwebman/node-express-docker-starter:dev bash -c "npm i && npm run coveralls"
+docker run -it --rm -e COVERALLS_REPO_TOKEN="$COVERALLS_REPO_TOKEN" jtwebman/node-express-docker-starter:dev npm run coveralls
