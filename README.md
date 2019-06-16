@@ -7,6 +7,6 @@
 [![NPM version](http://img.shields.io/npm/v/node-express-docker-starter.svg?style=flat)](https://npmjs.org/package/node-express-docker-starter)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
-This is just a simple Node.js Express Docker app that starts and sends a hello world. I use it to start new projects as well as to just test docker and kubernetes deploymnets.
+This is just a simple Node.js Express Docker app that starts and sends a hello world. I use it to start new projects as well as to just test docker and kubernetes deployments.
 
 I try to keep it up to date with the latest but there is no guarantee.
