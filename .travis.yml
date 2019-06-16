@@ -1,8 +1,9 @@
 language: minimal
 script:
+  - docker build -t jtwebman/node-express-docker-starter:dev --target=development .
   - docker build -t jtwebman/node-express-docker-starter .
 deploy:
   provider: script
-  script: bash docker_push.sh
+  script: bash deploy.sh
   on:
     branch: master
