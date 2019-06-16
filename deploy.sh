@@ -13,8 +13,8 @@ docker push jtwebman/node-express-docker-starter:dev
 # Run coverall to push coverage reports
 docker run -it --rm \
   -e COVERALLS_REPO_TOKEN="$COVERALLS_REPO_TOKEN" \
-  -e CI_NAME="Travis ci build #: $TRAVIS_BUILD_ID" \
-  -e CI_BUILD_URL="$TRAVIS_BUILD_WEB_UR" \
-  -e CI_BRANCH="$TRAVIS_BRANCH" \
-  -e CI_BUILD_NUMBER="$TRAVIS_BUILD_ID"
+  -e COVERALLS_SERVICE_NAME="Travis-ci" \
+  -e COVERALLS_GIT_COMMIT="$TRAVIS_COMMIT" \
+  -e COVERALLS_GIT_BRANCH="$TRAVIS_BRANCH" \
+  -e COVERALLS_SERVICE_JOB_ID="$TRAVIS_JOB_ID" \
   jtwebman/node-express-docker-starter:dev npm run coveralls
