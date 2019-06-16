@@ -16,4 +16,5 @@ docker run -it --rm \
   -e CI_NAME="Travis ci build #: $TRAVIS_BUILD_ID" \
   -e CI_BUILD_URL="$TRAVIS_BUILD_WEB_UR" \
   -e CI_BRANCH="$TRAVIS_BRANCH" \
+  -e CI_BUILD_NUMBER="$TRAVIS_BUILD_ID"
   jtwebman/node-express-docker-starter:dev npm run coveralls
