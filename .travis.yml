@@ -1,6 +1,6 @@
 language: node.js
 node_js:
-  - '12'
+  - '10'
 script:
   - docker build -t jtwebman/node-express-docker-starter:dev --target=development .
   - docker build -t jtwebman/node-express-docker-starter .
