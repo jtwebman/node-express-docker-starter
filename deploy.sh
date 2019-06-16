@@ -8,6 +8,8 @@ echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 docker build -t jtwebman/node-express-docker-starter:dev --target=development .
 docker build -t jtwebman/node-express-docker-starter .
 docker tag jtwebman/node-express-docker-starter "jtwebman/node-express-docker-starter:$PACKAGE_VERSION"
+docker tag jtwebman/node-express-docker-starter "jtwebman/node-express-docker-starter:build-$TRAVIS_BUILD_NUMBER"
 docker push jtwebman/node-express-docker-starter:latest
 docker push "jtwebman/node-express-docker-starter:$PACKAGE_VERSION"
+docker push "jtwebman/node-express-docker-starter:build-$TRAVIS_BUILD_NUMBER"
 docker push jtwebman/node-express-docker-starter:dev
