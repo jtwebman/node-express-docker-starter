@@ -4,4 +4,12 @@ node_js:
   - 8
   - 10
   - 12
-script: npm run travis
+services:
+  - docker
+script:
+  - npm run travis
+deploy:
+  provider: script
+  script: bash docker_push.sh
+  on:
+    branch: master
