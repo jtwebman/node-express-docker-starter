@@ -9,4 +9,4 @@
 
 This is just a simple Node.js Express Docker app that starts and sends a hello world. I use it to start new projects as well as to just test docker and kubernetes deploymnets.
 
-try to keep it up to date with the latest but there is no guarantee.
+I try to keep it up to date with the latest but there is no guarantee.
