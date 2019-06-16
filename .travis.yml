@@ -7,7 +7,7 @@ node_js:
 services:
   - docker
 script:
-  - npm run travis
+  - docker build -t jtwebman/node-express-docker-starter .
 deploy:
   provider: script
   script: bash docker_push.sh
