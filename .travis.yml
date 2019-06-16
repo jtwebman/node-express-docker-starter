@@ -9,4 +9,5 @@ jobs:
   include:
     - stage: deploy
       if: branch = master
+      node_js: '10'
       script: ./deploy.sh
