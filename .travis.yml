@@ -1,6 +1,4 @@
 language: minimal
-services:
-  - docker
 script:
   - docker build -t jtwebman/node-express-docker-starter .
 deploy:
