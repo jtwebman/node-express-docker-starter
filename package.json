@@ -7,7 +7,7 @@
     "start": "node server",
     "start:dev": "nodemon server.js",
     "test": "eslint . && nyc --reporter=html --reporter=text-summary mocha --recursive",
-    "coverall": "nyc mocha --recursive && nyc report --reporter=text-lcov | coveralls"
+    "test:travis": "eslint . && nyc mocha --recursive && nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",

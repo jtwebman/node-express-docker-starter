@@ -1,11 +1,13 @@
 language: node.js
 node_js:
+  - '6'
+  - '8'
   - '10'
+  - '12'
 script:
-  - docker build -t jtwebman/node-express-docker-starter:dev --target=development .
-  - docker build -t jtwebman/node-express-docker-starter .
-deploy:
-  provider: script
-  script: bash deploy.sh
-  on:
-    branch: master
+  - npm i && npm run test:travis
+jobs:
+  include:
+    - stage: deploy
+      if: branch = master
+      script: ./deploy.sh
