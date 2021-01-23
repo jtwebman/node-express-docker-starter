@@ -20,6 +20,12 @@ jobs:
         run: npm ci
       - name: Test
         run: npm test 
-      - name: Deploy
+      - name: Login to Docker Hub
+        if: github.ref == 'refs/heads/master'
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Build and Deploy Docker Images
         if: github.ref == 'refs/heads/master'
         run: ./deploy.sh
