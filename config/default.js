@@ -2,5 +2,5 @@
 
 module.exports = {
   PORT: process.env.PORT || 3000,
-  STATUS_PORT: 2368
+  STATUS_PORT: 2368,
 };

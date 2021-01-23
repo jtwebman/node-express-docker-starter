@@ -1,11 +1,12 @@
 'use strict';
 
+const config = require('config');
 const http = require('http');
 
 const options = {
   host: 'localhost',
-  port: '2368',
-  timeout: 2000
+  port: config.STATUS_PORT,
+  timeout: 2000,
 };
 
 const request = http.request(options, res => {

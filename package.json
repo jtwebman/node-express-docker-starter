@@ -1,6 +1,6 @@
 {
   "name": "node-express-docker-starter",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple node hello world for testing deployments and starting new projects.",
   "scripts": {
     "lint": "eslint .",
@@ -21,23 +21,23 @@
   },
   "homepage": "https://github.com/jtwebman/node-express-docker-starter#readme",
   "dependencies": {
-    "config": "^3.3.2",
-    "express": "^4.17.1",
-    "stoppable": "^1.1.0"
+    "config": "3.3.3",
+    "express": "4.17.1",
+    "stoppable": "1.1.0"
   },
   "engines": {
     "node": ">= 14"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "coveralls": "^3.1.0",
-    "eslint": "^7.13.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "mocha": "^8.2.1",
-    "nodemon": "^2.0.6",
-    "nyc": "^15.1.0",
-    "prettier": "^2.1.2",
-    "supertest": "^6.0.1"
+    "chai": "4.2.0",
+    "coveralls-next": "4.0.0",
+    "eslint": "7.18.0",
+    "eslint-config-google": "0.14.0",
+    "eslint-plugin-prettier": "3.3.1",
+    "mocha": "8.2.1",
+    "nodemon": "2.0.7",
+    "nyc": "15.1.0",
+    "prettier": "2.2.1",
+    "supertest": "6.0.1"
   }
 }

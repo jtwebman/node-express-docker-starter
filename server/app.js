@@ -6,6 +6,7 @@ const app = express();
 const indexRouter = require('./routers/index');
 
 app.disable('x-powered-by');
+app.set('etag', false);
 
 app.use('/', indexRouter);
 

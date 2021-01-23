@@ -15,7 +15,7 @@ const statusApp = stoppable(status.listen(statusPort));
 const killSignals = {
   SIGHUP: 1,
   SIGINT: 2,
-  SIGTERM: 15
+  SIGTERM: 15,
 };
 
 /**
