@@ -9,8 +9,6 @@ EXPOSE 3000
 
 FROM build as build-dev
 RUN npm ci
-RUN npm run lint
-RUN npm test
 
 FROM running as development
 COPY --from=build-dev /usr/src/app .
