@@ -1,6 +1,6 @@
 {
   "name": "node-express-docker-starter",
-  "version": "1.1.0",
+  "version": "1.2.1",
   "description": "Simple node hello world for testing deployments and starting new simple projects.",
   "scripts": {
     "lint": "eslint .",
