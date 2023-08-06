@@ -1,8 +1,8 @@
-FROM node:16 as build
+FROM node:18 as build
 WORKDIR /usr/src/app
 ADD . .
 
-FROM node:16-slim as running
+FROM node:18-slim as running
 WORKDIR /usr/src/app
 HEALTHCHECK CMD node healthcheck
 EXPOSE 3000
